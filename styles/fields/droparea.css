@@ -29,7 +29,7 @@
     border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
     & p {
-      color: red var(--text-tertiary);
+      color: var(--text-tertiary);
     }
 
     & svg path {

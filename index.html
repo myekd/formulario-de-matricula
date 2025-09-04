@@ -19,7 +19,7 @@
         <div class="main-container">
           <div class="back">
             <img src="./assets/icons/arrow-left-02.svg" alt="Ícone de voltar" />
-            <span>Voltar</span>
+            <span> Voltar </span>
           </div>
           <h1>Formulário de matrícula</h1>
           <p>
@@ -32,7 +32,7 @@
               <legend>Informações da criança</legend>
 
               <div class="input-wrapper">
-                <label for="fullname">Nome completo</label>
+                <label for="fullname"> Nome completo </label>
                 <input
                   type="text"
                   id="fullname"
@@ -42,12 +42,12 @@
               </div>
 
               <div class="input-wrapper">
-                <label for="birth">Data de nascimento</label
-                ><input type="date" id="birth" name="birth" lang="pt-BR" />
+                <label for="birth"> Data de nascimento </label>
+                <input type="date" id="birth" name="birth" lang="pt-BR" />
 
                 <div class="select-wrapper">
-                  <label for="gender">Sexo</label
-                  ><select name="gender" id="gender">
+                  <label for="gender"> Sexo </label>
+                  <select name="gender" id="gender">
                     <option value="female">Feminino</option>
                     <option value="male">Masculino</option>
                     <option value="na">Prefiro não responder</option>
@@ -55,18 +55,18 @@
                 </div>
               </div>
               <div class="textarea-wrapper">
-                <label for="medical-info">Informações médicas</label>
+                <label for="medical-info"> Informações médicas </label>
                 <textarea
                   name="medical-info"
                   id="medical-info"
                   cols="30"
-                  rows="6"
+                  rows="5"
                   placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (se sim, especifique.)"
                 ></textarea>
               </div>
 
               <div class="droparea-wrapper">
-                <label for="birth-file">Certidão de Nascimento</label>
+                <label for="birth-file"> Certidão de Nascimento </label>
 
                 <div class="dropzone">
                   <input type="file" id="birth-file" name="birth-file" />
@@ -97,15 +97,75 @@
                 </div>
               </div>
             </fieldset>
+            <fieldset class="address">
+              <legend>Endereço residencial</legend>
+
+              <div class="input-wrapper">
+                <label for="cep">
+                  CEP
+                  <input type="id" id="cep" name="cep" />
+                </label>
+              </div>
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="street"
+                    >Rua
+                    <input
+                      type="text"
+                      id="street"
+                      name="street"
+                      value="Rua das Flores"
+                      disabled
+                    />
+                  </label>
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="number">
+                    Número
+                    <input type="number" id="number" name="number" />
+                  </label>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="city"
+                    >Cidade<input
+                      type="text"
+                      id="street"
+                      name="street"
+                      value="São Paulo"
+                      disabled
+                    />
+                  </label>
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="state">
+                    Estado
+                    <input
+                      type="text"
+                      id="state"
+                      name="state"
+                      disabled
+                      value="SP"
+                    />
+                  </label>
+                </div>
+              </div>
+            </fieldset>
           </form>
         </div>
       </main>
-
       <aside>
         <div class="aside-container">
           <header>
             <img src="./assets/Logo.svg" alt="Logo Estrelas do Amanhã" />
-            <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+            <h2>
+              Porque cada momento de
+              <span> aprendizado </span>
+              conta
+            </h2>
             <p>
               Inscreva seu filho em nossa escola e veja-o florescer em um
               ambiente acolhedor, seguro e estimulante.
