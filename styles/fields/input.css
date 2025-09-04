@@ -25,7 +25,6 @@ textarea:focus,
 input[type="date"]:focus-within {
   outline: 0.25rem solid var(--surface-secondary);
   border: 0.125rem solid var(--stroke-highlight);
-  outline-offset: 1px;
 }
 
 input[type="date"] {
@@ -63,9 +62,38 @@ select {
 input {
   &[disabled] {
     background-color: var(--surface-disabled);
-
     border: 1px solid var(--stroke-default);
-
     color: var(--text-primary);
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 0.125rem solid var(--semantic-error);
+    outline: 0.25rem solid #fed6d6;
+  }
+
+  & + small {
+    font: var(--text-sm);
+    color: #78716c;
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font: var(--text-sm);
+    color: var(--semantic-error);
+    margin-top: 0.25rem;
+  }
+
+  &:valid[type="email"]:focus {
+    border: 0.125rem solid #35dc26;
+    outline: 0.25rem solid #e3fed6;
+  }
+
+  &:valid + .error,
+  &:placeholder-shown + .error {
+    display: none;
   }
 }
