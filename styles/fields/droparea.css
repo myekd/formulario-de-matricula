@@ -25,7 +25,7 @@
 
   &:hover,
   &:has(input:focus) {
-    outline-width: 0.125rem;
+    outline-width: 2px;
     outline-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
     & p {
